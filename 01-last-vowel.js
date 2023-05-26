@@ -8,7 +8,16 @@ Hint: You may find the `String.toLowerCase` or `String.toUpperCase` methods usef
 String.toLowerCase: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
 String.toUpperCase: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
-
+function lastVowel(str)	{
+let vowels = 'aeiou';
+for( let i = str.length -1; i>=0 ; i--){
+let num = str[i];
+	if(vowels.includes(num.toLowerCase())) {
+	return num;
+}
+}
+return  null;
+}
 
 // Your code here
 
